@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo.png" class="logo" alt="logo de alura">
+
+        <label class="toggle">
+            <input type="checkbox">
+            <span id="slider" onclick="modoOscuro()"> </span>
+        </label>
+        
+    </header>
+    <main>
+        <section>
+            <textarea class="inputA" cols="60" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+            <div id="div-desaparece">
+                <h6 class="informacion"> <img src="img/excalamcion.png" alt="simbolo de excalamcion"> Solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="encriptar()"> Encriptar</button>
+                <button class="desencriptar" onclick="desencriptar()"> Desencriptar</button>
+            </div>
+        </section>
+    </main>
+
+    <section class="message-box">
+        <textarea class="mensaje" cols="18" rows="8" disabled></textarea>
+        <p class="no-message">Ningun mensaje fue encontrado</p>
+        <p class="instruccion" >Ingrese el texto que deseas encriptar o desencriptar</p>
+        <button class="copiar" onclick="copy()">Copiar</button>
+    </section>
+
+    <div class="toast" id="toast">
+        <div class="toast-body">
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/8633cf8400.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
